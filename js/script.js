@@ -1,28 +1,29 @@
 const textos = [
-   "Enhance your professional future with our business skills training solutions.",
-"Master essential office tools and boost your career with our expert courses.",
-"Customized training for businesses looking to improve their team's productivity.",
-"Unlock your potential with our business skills courses, designed for success.",
-"Elevate your business with our office software training and services."
+  "Enhance your professional future with our business skills training solutions.",
+  "Master essential office tools and boost your career with our expert courses.",
+  "Customized training for businesses looking to improve their team's productivity.",
+  "Unlock your potential with our business skills courses, designed for success.",
+  "Elevate your business with our office software training and services."
 ];
 
 let index = 0;
 const dynamicText = document.getElementById("dynamic-text");
 
-function cambiarTexto() {
-    dynamicText.style.opacity = "0"; // Oculta el texto antes de cambiarlo
+// Aseguramos que el primer texto sea visible inmediatamente
+dynamicText.classList.add("visible");
 
-    setTimeout(() => {
-        dynamicText.textContent = textos[index];
-        dynamicText.style.animation = "none"; // Reiniciar animación
-        void dynamicText.offsetWidth; // Forzamos el reinicio de la animación
-        dynamicText.style.animation = "subirTexto 0.5s ease-in-out forwards";
-        
-        index = (index + 1) % textos.length;
-    }, 300);
+function cambiarTexto() {
+  dynamicText.classList.remove("visible"); // Eliminar la clase 'visible' antes de cambiar el texto
+
+  setTimeout(() => {
+      dynamicText.textContent = textos[index];
+      dynamicText.classList.add("visible"); // Añadir la clase 'visible' después de cambiar el texto
+      
+      index = (index + 1) % textos.length;  // Cambiar al siguiente texto en el array
+  }, 300); // Esperar 300ms para la transición de 'opacity' antes de actualizar el texto
 }
 
-setInterval(cambiarTexto, 4000); // Cambia cada 3 segundos
+setInterval(cambiarTexto, 5000); // Cambia cada 5 segundos
 
 
 

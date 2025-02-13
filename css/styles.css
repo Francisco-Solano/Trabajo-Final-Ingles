@@ -96,11 +96,26 @@ video {
 }
 
 
-
 .overlay h1 {
     opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Transición suave para la visibilidad */
+}
+
+.overlay h1.visible {
+    opacity: 1; /* Esta clase hace que el texto sea visible */
     animation: subirTexto 0.5s ease-in-out forwards;
 }
+
+/* Animación de subida */
+@keyframes subirTexto {
+    from {
+        transform: translateY(20px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
 
 /* Sección About Us */
 #about-us {
