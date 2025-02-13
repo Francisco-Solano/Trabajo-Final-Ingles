@@ -5,30 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css"> <!-- Ruta absoluta para CSS -->
     <title>NovaSkills</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
-
 </head>
-
 
 <body>
 
     <nav class="navbar">
         <div class="container navbar-content">
-            <a href="/" class="navbar-brand">NovaSkills</a>
+            <a href="/index.html" class="navbar-brand">NovaSkills</a> <!-- Ruta absoluta -->
             <ul class="navbar-nav">
                 <li id="mskills">
-                  <button onclick="location.href='templates/businessSkills.html'">Business Skills</button>
+                  <button onclick="location.href='/templates/businessSkills.html'">Business Skills</button> <!-- Ruta absoluta -->
                 </li>
                 <li id="mservices">
-                    <button onclick="location.href='templates/businessServices.html'">Business Services</button>
+                    <button onclick="location.href='/templates/businessServices.html'">Business Services</button> <!-- Ruta absoluta -->
                 </li>
                 <li id="mabout">
-                    <button onclick="location.href='templates/about.html'">About</button>
+                    <button onclick="location.href='/templates/about.html'">About</button> <!-- Ruta absoluta -->
                 </li>
                 <li>
-                    <button onclick="location.href='templates/contact.html'">Contact</button>
+                    <button onclick="location.href='/templates/contact.html'">Contact</button> <!-- Ruta absoluta -->
                 </li>
             </ul>
         </div>
@@ -48,13 +46,13 @@
                 We focus on affordable, suitable, and on-demand solutions, reducing risk and dependency on costly third-party tools. Join us and grow your business with confidence!</p>
         </div>
         <div class="story-image">
-            <img src="../images/history.png" alt="Image of Our Story">
+            <img src="/images/history.png" alt="Image of Our Story"> <!-- Ruta absoluta para la imagen -->
         </div>
     </div>
 
     <div class="doing-container">
         <div class="doing-image">
-            <img src="../images/doing.png" alt="Image of What we are doing">
+            <img src="/images/doing.png" alt="Image of What we are doing"> <!-- Ruta absoluta para la imagen -->
         </div>
         <div class="doing-text">
             <h2>What are we doing?</h2>
@@ -66,46 +64,41 @@
                 Enhancing User Experience with a smoother layout, stronger social proof, and trust logos.
                 Strengthening Security with updated code, character encoding, and compliance measures.
                 We continue evolving to provide suitable, on-demand solutions that help businesses scale up efficiently. Stay tuned for new updates!</p>
-                 </div>
+        </div>
     </div>
-
 
     <section class="our-team">
         <h2>Our Team</h2>
         <div class="team-container">
             <div class="team-member">
-                <img src="../images/ceo.jpg" alt="Employee 1" class="team-member-img">
+                <img src="/images/ceo.jpg" alt="Employee 1" class="team-member-img"> <!-- Ruta absoluta para la imagen -->
                 <h3>John Doe</h3>
                 <p class="position">CEO</p>
             </div>
             <div class="team-member">
-                <img src="../images/tManager.jpg" alt="Employee 2" class="team-member-img">
+                <img src="/images/tManager.jpg" alt="Employee 2" class="team-member-img"> <!-- Ruta absoluta para la imagen -->
                 <h3>Andrew Fuller</h3>
                 <p class="position">Training Manager</p>
             </div>
             <div class="team-member">
-                <img src="../images/softDev.png" alt="Employee 3" class="team-member-img">
+                <img src="/images/softDev.png" alt="Employee 3" class="team-member-img"> <!-- Ruta absoluta para la imagen -->
                 <h3>Mark Johnson</h3>
                 <p class="position">Software Developer</p>
             </div>
             <div class="team-member">
-                <img src="../images/marketing.jpg" alt="Employee 4" class="team-member-img">
+                <img src="/images/marketing.jpg" alt="Employee 4" class="team-member-img"> <!-- Ruta absoluta para la imagen -->
                 <h3>Alice Brown</h3>
                 <p class="position">Marketing Director</p>
             </div>
         </div>
     </section>
 
-
     <section class="contact-us">
         <p class="cta-text">What are you waiting for? Contact us now and start growing up!</p>
-        <button class="btn-explore" onclick="location.href='templates/contact.html'">Contact us</button>
+        <button class="btn-explore" onclick="location.href='/templates/contact.html'">Contact us</button> <!-- Ruta absoluta -->
     </section>
-    
-    
-    
-    
 
-    </body>
+    <script src="/js/script.js"></script> <!-- Ruta absoluta para el script -->
+</body>
 
-    </html>
+</html>
